@@ -1,0 +1,648 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0": {
+      "Ardalis.GuardClauses/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Ardalis.GuardClauses.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Ardalis.GuardClauses.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Ardalis.Result/10.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Ardalis.Result.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Ardalis.Result.dll": {}
+        }
+      },
+      "Ardalis.SharedKernel/5.0.0": {
+        "type": "package"
+      },
+      "Ardalis.SmartEnum/8.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Ardalis.SmartEnum.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Ardalis.SmartEnum.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Ardalis.Specification/9.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/Ardalis.Specification.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Ardalis.Specification.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Mediator.Abstractions/3.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Mediator.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Mediator.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/10.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Logging.Abstractions/10.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0",
+          "System.Diagnostics.DiagnosticSource": "10.0.0"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.Extensions.Logging.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/Microsoft.Extensions.Logging.Abstractions.targets": {}
+        }
+      },
+      "System.Diagnostics.DiagnosticSource/10.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/System.Diagnostics.DiagnosticSource.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/System.Diagnostics.DiagnosticSource.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net8.0/_._": {}
+        }
+      },
+      "Vogen/8.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net9.0/Vogen.SharedTypes.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Vogen.SharedTypes.dll": {
+            "related": ".xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        },
+        "build": {
+          "buildTransitive/Vogen.targets": {}
+        }
+      },
+      "Test.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "Ardalis.GuardClauses": "5.0.0",
+          "Ardalis.Result": "10.1.0",
+          "Ardalis.SharedKernel": "5.0.0",
+          "Ardalis.SmartEnum": "8.2.0",
+          "Ardalis.Specification": "9.3.1",
+          "Mediator.Abstractions": "3.0.2",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.0",
+          "Vogen": "8.0.2"
+        },
+        "compile": {
+          "bin/placeholder/Test.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Test.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Ardalis.GuardClauses/5.0.0": {
+      "sha512": "jVPRvLw0xIUFto2cMrKgRYADWIHbEEfzZHGiU/swwNgl1zo28Q1zfSa3VUC3C0s9DyhFDPSaF4dEDQRyTZUcyQ==",
+      "type": "package",
+      "path": "ardalis.guardclauses/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "ardalis.guardclauses.5.0.0.nupkg.sha512",
+        "ardalis.guardclauses.nuspec",
+        "icon.png",
+        "lib/net8.0/Ardalis.GuardClauses.dll",
+        "lib/net8.0/Ardalis.GuardClauses.pdb",
+        "lib/net8.0/Ardalis.GuardClauses.xml",
+        "lib/netstandard2.0/Ardalis.GuardClauses.dll",
+        "lib/netstandard2.0/Ardalis.GuardClauses.pdb",
+        "lib/netstandard2.0/Ardalis.GuardClauses.xml",
+        "lib/netstandard2.1/Ardalis.GuardClauses.dll",
+        "lib/netstandard2.1/Ardalis.GuardClauses.pdb",
+        "lib/netstandard2.1/Ardalis.GuardClauses.xml"
+      ]
+    },
+    "Ardalis.Result/10.1.0": {
+      "sha512": "+WgsXh+JRm0d8BZPlBUc5w0+FTda4vbWRa/IF2q4zDoRsU5BXr8w4rTbYEklZIMNgQQZTcNouR/QfBV5I/4XYQ==",
+      "type": "package",
+      "path": "ardalis.result/10.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ardalis.result.10.1.0.nupkg.sha512",
+        "ardalis.result.nuspec",
+        "icon.png",
+        "lib/net6.0/Ardalis.Result.dll",
+        "lib/net7.0/Ardalis.Result.dll",
+        "lib/net8.0/Ardalis.Result.dll",
+        "lib/netstandard2.0/Ardalis.Result.dll"
+      ]
+    },
+    "Ardalis.SharedKernel/5.0.0": {
+      "sha512": "xK3uXmSEHpWnQqQo649SgZFQEcZ8dmWMonpiJPdfj5i23mX5ut0tgKpYheCDKEtYtXdiEKLU17K+eRp2FRGRhQ==",
+      "type": "package",
+      "path": "ardalis.sharedkernel/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ardalis.sharedkernel.5.0.0.nupkg.sha512",
+        "ardalis.sharedkernel.nuspec",
+        "icon.png",
+        "lib/net10.0/Ardalis.SharedKernel.dll",
+        "lib/net10.0/Ardalis.SharedKernel.pdb",
+        "lib/net10.0/Ardalis.SharedKernel.xml"
+      ]
+    },
+    "Ardalis.SmartEnum/8.2.0": {
+      "sha512": "P1CLI2okpzHjOJnZMYLnzcyu1/fUJEYK1X4JSnal2TPmovrUTtXK6Sn78D2JgKUdwjSeWddnRveMj+BEZoksvg==",
+      "type": "package",
+      "path": "ardalis.smartenum/8.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "ardalis.smartenum.8.2.0.nupkg.sha512",
+        "ardalis.smartenum.nuspec",
+        "icon.png",
+        "lib/net6.0/Ardalis.SmartEnum.dll",
+        "lib/net6.0/Ardalis.SmartEnum.xml",
+        "lib/net7.0/Ardalis.SmartEnum.dll",
+        "lib/net7.0/Ardalis.SmartEnum.xml",
+        "lib/net8.0/Ardalis.SmartEnum.dll",
+        "lib/net8.0/Ardalis.SmartEnum.xml",
+        "lib/netstandard2.0/Ardalis.SmartEnum.dll",
+        "lib/netstandard2.0/Ardalis.SmartEnum.xml"
+      ]
+    },
+    "Ardalis.Specification/9.3.1": {
+      "sha512": "GWrE6BA0smWFLbN+XPU2l5rDF9Uzelfbb3w35jJ0CGIat+p1ChbtLcbkvYRMEculBHOAo12omwAAOm3VFWkoJQ==",
+      "type": "package",
+      "path": "ardalis.specification/9.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "ardalis.specification.9.3.1.nupkg.sha512",
+        "ardalis.specification.nuspec",
+        "icon.png",
+        "lib/net8.0/Ardalis.Specification.dll",
+        "lib/net8.0/Ardalis.Specification.xml",
+        "lib/net9.0/Ardalis.Specification.dll",
+        "lib/net9.0/Ardalis.Specification.xml",
+        "lib/netstandard2.0/Ardalis.Specification.dll",
+        "lib/netstandard2.0/Ardalis.Specification.xml",
+        "readme-nuget.md"
+      ]
+    },
+    "Mediator.Abstractions/3.0.2": {
+      "sha512": "TytjnyN8gLObZBxkM7HHPFJF3LHtk6Y8mHW56ONuXRuVEK6Fmed3f0z79H9TpmoZQP2zQAIS4/0O9R2w0v02qw==",
+      "type": "package",
+      "path": "mediator.abstractions/3.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "lib/net8.0/Mediator.dll",
+        "lib/net8.0/Mediator.xml",
+        "lib/netstandard2.0/Mediator.dll",
+        "lib/netstandard2.0/Mediator.xml",
+        "mediator.abstractions.3.0.2.nupkg.sha512",
+        "mediator.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/10.0.0": {
+      "sha512": "L3AdmZ1WOK4XXT5YFPEwyt0ep6l8lGIPs7F5OOBZc77Zqeo01Of7XXICy47628sdVl0v/owxYJTe86DTgFwKCA==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/10.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Extensions.DependencyInjection.Abstractions.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.Abstractions.targets",
+        "lib/net10.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net10.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/net462/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net462/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.10.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.Logging.Abstractions/10.0.0": {
+      "sha512": "FU/IfjDfwaMuKr414SSQNTIti/69bHEMb+QKrskRb26oVqpx3lNFXMjs/RC9ZUuhBhcwDM2BwOgoMw+PZ+beqQ==",
+      "type": "package",
+      "path": "microsoft.extensions.logging.abstractions/10.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "analyzers/dotnet/roslyn3.11/cs/Microsoft.Extensions.Logging.Generators.dll",
+        "analyzers/dotnet/roslyn3.11/cs/cs/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/de/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/es/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/fr/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/it/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/ja/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/ko/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/pl/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/pt-BR/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/ru/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/tr/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/zh-Hans/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn3.11/cs/zh-Hant/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/Microsoft.Extensions.Logging.Generators.dll",
+        "analyzers/dotnet/roslyn4.0/cs/cs/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/de/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/es/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/fr/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/it/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/ja/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/ko/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/pl/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/pt-BR/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/ru/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/tr/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/zh-Hans/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.0/cs/zh-Hant/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/Microsoft.Extensions.Logging.Generators.dll",
+        "analyzers/dotnet/roslyn4.4/cs/cs/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/de/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/es/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/fr/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/it/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/ja/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/ko/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/pl/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/pt-BR/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/ru/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/tr/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/zh-Hans/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "analyzers/dotnet/roslyn4.4/cs/zh-Hant/Microsoft.Extensions.Logging.Generators.resources.dll",
+        "buildTransitive/net461/Microsoft.Extensions.Logging.Abstractions.targets",
+        "buildTransitive/net462/Microsoft.Extensions.Logging.Abstractions.targets",
+        "buildTransitive/net8.0/Microsoft.Extensions.Logging.Abstractions.targets",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.Logging.Abstractions.targets",
+        "buildTransitive/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.targets",
+        "lib/net10.0/Microsoft.Extensions.Logging.Abstractions.dll",
+        "lib/net10.0/Microsoft.Extensions.Logging.Abstractions.xml",
+        "lib/net462/Microsoft.Extensions.Logging.Abstractions.dll",
+        "lib/net462/Microsoft.Extensions.Logging.Abstractions.xml",
+        "lib/net8.0/Microsoft.Extensions.Logging.Abstractions.dll",
+        "lib/net8.0/Microsoft.Extensions.Logging.Abstractions.xml",
+        "lib/net9.0/Microsoft.Extensions.Logging.Abstractions.dll",
+        "lib/net9.0/Microsoft.Extensions.Logging.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.xml",
+        "microsoft.extensions.logging.abstractions.10.0.0.nupkg.sha512",
+        "microsoft.extensions.logging.abstractions.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Diagnostics.DiagnosticSource/10.0.0": {
+      "sha512": "0KdBK+h7G13PuOSC2R/DalAoFMvdYMznvGRuICtkdcUMXgl/gYXsG6z4yUvTxHSMACorWgHCU1Faq0KUHU6yAQ==",
+      "type": "package",
+      "path": "system.diagnostics.diagnosticsource/10.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Diagnostics.DiagnosticSource.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net8.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Diagnostics.DiagnosticSource.targets",
+        "lib/net10.0/System.Diagnostics.DiagnosticSource.dll",
+        "lib/net10.0/System.Diagnostics.DiagnosticSource.xml",
+        "lib/net462/System.Diagnostics.DiagnosticSource.dll",
+        "lib/net462/System.Diagnostics.DiagnosticSource.xml",
+        "lib/net8.0/System.Diagnostics.DiagnosticSource.dll",
+        "lib/net8.0/System.Diagnostics.DiagnosticSource.xml",
+        "lib/net9.0/System.Diagnostics.DiagnosticSource.dll",
+        "lib/net9.0/System.Diagnostics.DiagnosticSource.xml",
+        "lib/netstandard2.0/System.Diagnostics.DiagnosticSource.dll",
+        "lib/netstandard2.0/System.Diagnostics.DiagnosticSource.xml",
+        "system.diagnostics.diagnosticsource.10.0.0.nupkg.sha512",
+        "system.diagnostics.diagnosticsource.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Vogen/8.0.2": {
+      "sha512": "0irt++hrVYJzvaCiiNLZsIu4cf0vQMw5raIwVqJjHp/DTxGyAzRb+aLsFHhqzQWKT0y+uqLKDu9QJfcqTkvZCQ==",
+      "type": "package",
+      "path": "vogen/8.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "analyzers/dotnet/cs/Vogen.SharedTypes.dll",
+        "analyzers/dotnet/roslyn4.4/cs/Vogen.CodeFixers.dll",
+        "analyzers/dotnet/roslyn4.4/cs/Vogen.dll",
+        "analyzers/dotnet/roslyn4.6/cs/Vogen.CodeFixers.dll",
+        "analyzers/dotnet/roslyn4.6/cs/Vogen.dll",
+        "analyzers/dotnet/roslyn4.8/cs/Vogen.CodeFixers.dll",
+        "analyzers/dotnet/roslyn4.8/cs/Vogen.dll",
+        "buildTransitive/Vogen.targets",
+        "content/Vogen.targets",
+        "contentFiles/any/netstandard2.0/Vogen.targets",
+        "lib/net9.0/Vogen.SharedTypes.dll",
+        "lib/net9.0/Vogen.SharedTypes.xml",
+        "lib/netstandard2.0/Vogen.SharedTypes.dll",
+        "lib/netstandard2.0/Vogen.SharedTypes.xml",
+        "nuget-readme.md",
+        "package_logo_128x128.png",
+        "vogen.8.0.2.nupkg.sha512",
+        "vogen.nuspec"
+      ]
+    },
+    "Test.Core/1.0.0": {
+      "type": "project",
+      "path": "../Test.Core/Test.Core.csproj",
+      "msbuildProject": "../Test.Core/Test.Core.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0": [
+      "Ardalis.Result >= 10.1.0",
+      "Test.Core >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\doros\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "c:\\Users\\doros\\Desktop\\CLEAN\\CleanARCH-Driver-Exp\\Test\\src\\Test.UseCases\\Test.UseCases.csproj",
+      "projectName": "Test.UseCases",
+      "projectPath": "c:\\Users\\doros\\Desktop\\CLEAN\\CleanARCH-Driver-Exp\\Test\\src\\Test.UseCases\\Test.UseCases.csproj",
+      "packagesPath": "C:\\Users\\doros\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\doros\\Desktop\\CLEAN\\CleanARCH-Driver-Exp\\Test\\src\\Test.UseCases\\obj\\",
+      "projectStyle": "PackageReference",
+      "centralPackageVersionsManagementEnabled": true,
+      "CentralPackageTransitivePinningEnabled": true,
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "c:\\Users\\doros\\Desktop\\CLEAN\\CleanARCH-Driver-Exp\\Test\\NuGet.Config",
+        "C:\\Users\\doros\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0"
+      ],
+      "sources": {
+        "c:\\LocalNuget": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "projectReferences": {
+            "c:\\Users\\doros\\Desktop\\CLEAN\\CleanARCH-Driver-Exp\\Test\\src\\Test.Core\\Test.Core.csproj": {
+              "projectPath": "c:\\Users\\doros\\Desktop\\CLEAN\\CleanARCH-Driver-Exp\\Test\\src\\Test.Core\\Test.Core.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "allWarningsAsErrors": true,
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "10.0.200"
+    },
+    "frameworks": {
+      "net9.0": {
+        "targetAlias": "net9.0",
+        "dependencies": {
+          "Ardalis.Result": {
+            "target": "Package",
+            "version": "[10.1.0, )",
+            "versionCentrallyManaged": true
+          }
+        },
+        "centralPackageVersions": {
+          "Ardalis.GuardClauses": "5.0.0",
+          "Ardalis.HttpClientTestExtensions": "4.2.0",
+          "Ardalis.ListStartupServices": "1.1.4",
+          "Ardalis.Result": "10.1.0",
+          "Ardalis.Result.AspNetCore": "10.1.0",
+          "Ardalis.SharedKernel": "5.0.0",
+          "Ardalis.SmartEnum": "8.2.0",
+          "Ardalis.Specification": "9.3.1",
+          "Ardalis.Specification.EntityFrameworkCore": "9.3.1",
+          "Aspire.Hosting.AppHost": "13.0.0",
+          "Aspire.Hosting.SqlServer": "13.0.0",
+          "Aspire.Hosting.Testing": "9.5.1",
+          "Azure.Identity": "1.17.0",
+          "coverlet.collector": "6.0.4",
+          "FastEndpoints": "7.1.1",
+          "FastEndpoints.ApiExplorer": "2.2.0",
+          "FastEndpoints.Swagger": "7.1.1",
+          "MailKit": "4.15.1",
+          "Mediator.Abstractions": "3.0.2",
+          "Mediator.SourceGenerator": "3.0.2",
+          "Microsoft.AspNetCore.Mvc.Testing": "10.0.0",
+          "Microsoft.EntityFrameworkCore.Design": "10.0.0",
+          "Microsoft.EntityFrameworkCore.InMemory": "10.0.0",
+          "Microsoft.EntityFrameworkCore.Relational": "10.0.0",
+          "Microsoft.EntityFrameworkCore.Sqlite": "10.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "10.0.0",
+          "Microsoft.Extensions.Configuration": "10.0.0",
+          "Microsoft.Extensions.Http.Resilience": "10.0.0",
+          "Microsoft.Extensions.Logging": "10.0.0",
+          "Microsoft.Extensions.Logging.Abstractions": "10.0.0",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "10.0.0",
+          "Microsoft.Extensions.ServiceDiscovery": "10.0.0",
+          "Microsoft.NET.Test.Sdk": "18.0.1",
+          "NimblePros.Metronome": "0.4.1",
+          "NSubstitute": "5.3.0",
+          "OpenTelemetry.Exporter.OpenTelemetryProtocol": "1.14.0",
+          "OpenTelemetry.Extensions.Hosting": "1.14.0",
+          "OpenTelemetry.Instrumentation.AspNetCore": "1.13.0",
+          "OpenTelemetry.Instrumentation.Http": "1.13.0",
+          "OpenTelemetry.Instrumentation.Runtime": "1.13.0",
+          "ReportGenerator": "5.5.0",
+          "Scalar.AspNetCore": "2.10.3",
+          "Serilog.AspNetCore": "9.0.0",
+          "Serilog.Sinks.OpenTelemetry": "4.2.0",
+          "Shouldly": "4.3.0",
+          "SQLite": "3.13.0",
+          "Swashbuckle.AspNetCore": "6.5.0",
+          "Swashbuckle.AspNetCore.Annotations": "6.5.0",
+          "Testcontainers": "4.3.0",
+          "Testcontainers.MsSql": "4.3.0",
+          "Vogen": "8.0.2",
+          "xunit": "2.9.3",
+          "xunit.runner.visualstudio": "3.1.5"
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[9.0.15, 9.0.15]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[9.0.15, 9.0.15]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[9.0.15, 9.0.15]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1202",
+      "level": "Error",
+      "message": "Package Ardalis.SharedKernel 5.0.0 is not compatible with net9.0 (.NETCoreApp,Version=v9.0). Package Ardalis.SharedKernel 5.0.0 supports: net10.0 (.NETCoreApp,Version=v10.0)",
+      "libraryId": "Ardalis.SharedKernel",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    }
+  ],
+  "centralTransitiveDependencyGroups": {
+    "net9.0": {
+      "Ardalis.GuardClauses": {
+        "include": "Runtime, Compile, Native, BuildTransitive",
+        "version": "[5.0.0, )"
+      },
+      "Ardalis.SharedKernel": {
+        "include": "Runtime, Compile, Native, BuildTransitive",
+        "version": "[5.0.0, )"
+      },
+      "Ardalis.SmartEnum": {
+        "include": "Runtime, Compile, Native, BuildTransitive",
+        "version": "[8.2.0, )"
+      },
+      "Ardalis.Specification": {
+        "include": "Runtime, Compile, Native, BuildTransitive",
+        "version": "[9.3.1, )"
+      },
+      "Mediator.Abstractions": {
+        "include": "Runtime, Compile, Native, BuildTransitive",
+        "version": "[3.0.2, )"
+      },
+      "Microsoft.Extensions.Logging.Abstractions": {
+        "include": "Runtime, Compile, Native, BuildTransitive",
+        "version": "[10.0.0, )"
+      },
+      "Vogen": {
+        "include": "Runtime, Compile, Native, BuildTransitive",
+        "version": "[8.0.2, )"
+      }
+    }
+  }
+}

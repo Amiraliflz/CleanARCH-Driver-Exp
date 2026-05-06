@@ -1,0 +1,34 @@
+{
+  "version": 2,
+  "dgSpecHash": "B0F3/97S37g=",
+  "success": false,
+  "projectFilePath": "c:\\Users\\doros\\Desktop\\CLEAN\\CleanARCH-Driver-Exp\\Test\\src\\Test.Core\\Test.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\doros\\.nuget\\packages\\ardalis.guardclauses\\5.0.0\\ardalis.guardclauses.5.0.0.nupkg.sha512",
+    "C:\\Users\\doros\\.nuget\\packages\\ardalis.result\\10.1.0\\ardalis.result.10.1.0.nupkg.sha512",
+    "C:\\Users\\doros\\.nuget\\packages\\ardalis.sharedkernel\\5.0.0\\ardalis.sharedkernel.5.0.0.nupkg.sha512",
+    "C:\\Users\\doros\\.nuget\\packages\\ardalis.smartenum\\8.2.0\\ardalis.smartenum.8.2.0.nupkg.sha512",
+    "C:\\Users\\doros\\.nuget\\packages\\ardalis.specification\\9.3.1\\ardalis.specification.9.3.1.nupkg.sha512",
+    "C:\\Users\\doros\\.nuget\\packages\\mediator.abstractions\\3.0.2\\mediator.abstractions.3.0.2.nupkg.sha512",
+    "C:\\Users\\doros\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.0\\microsoft.extensions.dependencyinjection.abstractions.10.0.0.nupkg.sha512",
+    "C:\\Users\\doros\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\10.0.0\\microsoft.extensions.logging.abstractions.10.0.0.nupkg.sha512",
+    "C:\\Users\\doros\\.nuget\\packages\\system.diagnostics.diagnosticsource\\10.0.0\\system.diagnostics.diagnosticsource.10.0.0.nupkg.sha512",
+    "C:\\Users\\doros\\.nuget\\packages\\vogen\\8.0.2\\vogen.8.0.2.nupkg.sha512",
+    "C:\\Users\\doros\\.nuget\\packages\\microsoft.netcore.app.ref\\9.0.15\\microsoft.netcore.app.ref.9.0.15.nupkg.sha512",
+    "C:\\Users\\doros\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\9.0.15\\microsoft.windowsdesktop.app.ref.9.0.15.nupkg.sha512",
+    "C:\\Users\\doros\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\9.0.15\\microsoft.aspnetcore.app.ref.9.0.15.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1202",
+      "level": "Error",
+      "message": "Package Ardalis.SharedKernel 5.0.0 is not compatible with net9.0 (.NETCoreApp,Version=v9.0). Package Ardalis.SharedKernel 5.0.0 supports: net10.0 (.NETCoreApp,Version=v10.0)",
+      "projectPath": "c:\\Users\\doros\\Desktop\\CLEAN\\CleanARCH-Driver-Exp\\Test\\src\\Test.Core\\Test.Core.csproj",
+      "filePath": "c:\\Users\\doros\\Desktop\\CLEAN\\CleanARCH-Driver-Exp\\Test\\src\\Test.Core\\Test.Core.csproj",
+      "libraryId": "Ardalis.SharedKernel",
+      "targetGraphs": [
+        "net9.0"
+      ]
+    }
+  ]
+}

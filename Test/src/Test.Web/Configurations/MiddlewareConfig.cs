@@ -1,6 +1,5 @@
 ﻿using Ardalis.ListStartupServices;
 using Test.Infrastructure.Data;
-using Scalar.AspNetCore;
 
 namespace Test.Web.Configurations;
 
@@ -14,7 +13,7 @@ public static class MiddlewareConfig
       app.UseShowAllServicesMiddleware(); // see https://github.com/ardalis/AspNetCoreStartupServices
     }
     else
-    {   
+    {
       app.UseDefaultExceptionHandler(); // from FastEndpoints
       app.UseHsts();
     }
@@ -31,12 +30,6 @@ public static class MiddlewareConfig
       {
         settings.Path = "/swagger";
         settings.DocumentPath = "/openapi/{documentName}.json";
-      });
-  
-      app.MapScalarApiReference(options =>
-      {
-        options.WithTitle("Clean Architecture API");
-        options.WithOpenApiRoutePattern("/openapi/{documentName}.json");
       });
     }
 

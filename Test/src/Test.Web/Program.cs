@@ -9,7 +9,6 @@ using var loggerFactory = LoggerFactory.Create(config => config.AddConsole());
 var startupLogger = loggerFactory.CreateLogger<Program>();
 
 startupLogger.LogInformation("Starting web host");
-
 builder.Services.AddOptionConfigs(builder.Configuration, startupLogger, builder);
 builder.Services.AddServiceConfigs(startupLogger, builder);
 
@@ -18,9 +17,9 @@ builder.Services.AddFastEndpoints()
                 {
                   o.DocumentSettings = s =>
                   {
-                    s.Title = "Clean Architecture API";
+                    s.Title = "Taxi Driver API";
                     s.Version = "v1";
-                    s.Description = "HTTP endpoints for the Clean Architecture sample application.";
+                    s.Description = "HTTP endpoints for taxi driver registration.";
                   };
                   o.ShortSchemaNames = true;
                 });
