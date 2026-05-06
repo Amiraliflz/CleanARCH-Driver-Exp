@@ -29,6 +29,22 @@ namespace Test.Core.DriverAggregate.Entities
         public void UpdatePhoneNumber(string newPhoneNumber)
         {
             PhoneNumber = newPhoneNumber;
+            // Raise domain event
+            PhoneNumberChangedEvent = new PhoneNumberChangedEvent(this);
+     
+        }
+        public void UpdateVehicle(Vehicle newVehicle)
+        {
+            Vehicle = newVehicle;
+            // Raise domain event if needed
+            VehicleChangedEvent = new VehicleChangedEvent(this);
+            
+        }
+        public void UpdateBankAccount(BankAccount newBankAccount)
+        {
+            BankAccount = newBankAccount;
+            // Raise domain event if needed
+            BankAccountChangedEvent = new BankAccountChangedEvent(this);
         }
     }
 } 
