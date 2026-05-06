@@ -12,6 +12,14 @@ namespace Test.Core.DriverAggregate.Entities
         public DateTime CreatedAt { get; private set; }
 
         private Driver() { }
+        public Driver(string name, string phoneNumber, DateTime dateOfBirth)
+        {
+            Id = Guid.NewGuid();
+            Name = name;
+            PhoneNumber = phoneNumber;
+            DateOfBirth = dateOfBirth;
+            CreatedAt = DateTime.UtcNow;
+        }
         public static Driver Create(string name, string phoneNumber, string licenseNumber, DateTime dateOfBirth, BankAccount bankAccount, Vehicle vehicle)
         {
             return new Driver
@@ -24,27 +32,38 @@ namespace Test.Core.DriverAggregate.Entities
                 BankAccount = bankAccount,
                 Vehicle = vehicle,
                 CreatedAt = DateTime.UtcNow
+                RegisterDomainEvent(new DriverRegisteredEvent(Id, name, phoneNumber, dateOfBirth));
             };
         }
         public void UpdatePhoneNumber(string newPhoneNumber)
         {
             PhoneNumber = newPhoneNumber;
-            // Raise domain event
-            PhoneNumberChangedEvent = new PhoneNumberChangedEvent(this);
-     
+            RegisterDomainEvent(new PhoneNumberChangedEvent(Id, newPhoneNumber));
         }
         public void UpdateVehicle(Vehicle newVehicle)
         {
             Vehicle = newVehicle;
-            // Raise domain event if needed
-            VehicleChangedEvent = new VehicleChangedEvent(this);
-            
+            RegisterDomainEvent(new VehicleChangedEvent(Id, newVehicle));
         }
         public void UpdateBankAccount(BankAccount newBankAccount)
         {
             BankAccount = newBankAccount;
-            // Raise domain event if needed
-            BankAccountChangedEvent = new BankAccountChangedEvent(this);
+            RegisterDomainEvent(new BankAccountChangedEvent(Id, newBankAccount));
+        }
+        public void SubmitLicense(string licenseNumber)
+        {
+            LicenseNumber = licenseNumber;
+            RegisterDomainEvent(new LicenseSubmittedEvent(Id, licenseNumber));
+        }
+        public void SubmitVehicle(Vehicle vehicle)
+        {
+            Vehicle = vehicle;
+            RegisterDomainEvent(new VehicleSubmittedEvent(Id, vehicle));
+        }
+        public void UploadVehiclePhotos(string[] photoUrls)
+        {
+            // For simplicity, just raise event
+            RegisterDomainEvent(new VehiclePhotosUploadedEvent(Id, photoUrls));
         }
     }
 } 
